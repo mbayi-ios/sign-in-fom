@@ -12,6 +12,7 @@
 		89A2F4BE2A1569D400C1B439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A2F4BD2A1569D400C1B439 /* Preview Assets.xcassets */; };
 		89F309E32A156B9200A64C4F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F309E22A156B9200A64C4F /* SignInView.swift */; };
 		89F309E52A156E1500A64C4F /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F309E42A156E1500A64C4F /* SignViewModel.swift */; };
+		89F309E72A1574BF00A64C4F /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F309E62A1574BF00A64C4F /* SignInResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		89A2F4BD2A1569D400C1B439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89F309E22A156B9200A64C4F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		89F309E42A156E1500A64C4F /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
+		89F309E62A1574BF00A64C4F /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				89A2F4BC2A1569D400C1B439 /* Preview Content */,
 				89F309E22A156B9200A64C4F /* SignInView.swift */,
 				89F309E42A156E1500A64C4F /* SignViewModel.swift */,
+				89F309E62A1574BF00A64C4F /* SignInResponse.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				89F309E52A156E1500A64C4F /* SignViewModel.swift in Sources */,
 				89F309E32A156B9200A64C4F /* SignInView.swift in Sources */,
+				89F309E72A1574BF00A64C4F /* SignInResponse.swift in Sources */,
 				89A2F4B72A1569D200C1B439 /* SignInApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

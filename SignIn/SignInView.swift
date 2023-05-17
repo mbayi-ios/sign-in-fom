@@ -40,6 +40,10 @@ struct SignInView: View {
         }
         .padding()
         .textFieldStyle(.roundedBorder)
+        .alert(isPresented: $viewModel.hasError) {
+            Alert(title: Text("Sign in Failed"),
+                  message: Text("The email/password combination is invalid"))
+        }
     }
 }
 
