@@ -8,25 +8,34 @@
 import SwiftUI
 
 struct SignInView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @ObservedObject var viewModel: SignViewModel
+
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
                 Text("Email")
-                TextField("Email", text: $email)
+                TextField("Email", text: $viewModel.email)
                     .autocapitalization(.none)
                     .keyboardType(.emailAddress)
                     .disableAutocorrection(true)
                 
                 Text("Password")
-                SecureField("Password", text: $password)
+                SecureField("Password", text: $viewModel.password)
             }
-            Button("sign In") {
-                print("Sign in")
+            .disabled(viewModel.isSigningIn)
+
+            if viewModel.isSigningIn {
+                ProgressView()
+                    .progressViewStyle(.circular)
+            } else {
+                Button("sign In") {
+                    print("Sign in")
+                    viewModel.signIn()
+                }
+                .buttonBorderShape(.capsule)
+                .buttonStyle(.borderedProminent)
+                .disabled(!viewModel.canSignIn)
             }
-            .buttonBorderShape(.capsule)
-            .buttonStyle(.borderedProminent)
             Spacer()
         }
         .padding()
@@ -36,6 +45,6 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(viewModel: SignViewModel())
     }
 }
