@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		89A2F4B72A1569D200C1B439 /* SignInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2F4B62A1569D200C1B439 /* SignInApp.swift */; };
-		89A2F4B92A1569D200C1B439 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2F4B82A1569D200C1B439 /* ContentView.swift */; };
 		89A2F4BB2A1569D400C1B439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A2F4BA2A1569D400C1B439 /* Assets.xcassets */; };
 		89A2F4BE2A1569D400C1B439 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A2F4BD2A1569D400C1B439 /* Preview Assets.xcassets */; };
+		89F309E32A156B9200A64C4F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F309E22A156B9200A64C4F /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89A2F4B32A1569D200C1B439 /* SignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A2F4B62A1569D200C1B439 /* SignInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApp.swift; sourceTree = "<group>"; };
-		89A2F4B82A1569D200C1B439 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89A2F4BA2A1569D400C1B439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89A2F4BD2A1569D400C1B439 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89F309E22A156B9200A64C4F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				89A2F4B62A1569D200C1B439 /* SignInApp.swift */,
-				89A2F4B82A1569D200C1B439 /* ContentView.swift */,
 				89A2F4BA2A1569D400C1B439 /* Assets.xcassets */,
 				89A2F4BC2A1569D400C1B439 /* Preview Content */,
+				89F309E22A156B9200A64C4F /* SignInView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89A2F4B92A1569D200C1B439 /* ContentView.swift in Sources */,
+				89F309E32A156B9200A64C4F /* SignInView.swift in Sources */,
 				89A2F4B72A1569D200C1B439 /* SignInApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
